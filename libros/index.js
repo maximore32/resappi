@@ -9,8 +9,6 @@ var moviesController = require('./books/Bookscontrols');
 // La Rest API queda en /api/
 app.use('/api', moviesController);
 
-var port = "8080";
+const port = process.env.PORT || 8080;
 
-app.listen(port, function() {
-  console.log('Express server listening on port ' + port);
-});
+app.listen(port);

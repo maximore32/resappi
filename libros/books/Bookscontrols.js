@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     // Habilitamos CORS para que se pueda obtener la info desde cualquier dominio
     res.header('Access-Control-Allow-Origin', '*');
     Mov.find({}, (err, books) =>{
-        if (err) return res.status(500).send({"error":"Problemas buscando todas las peliculas"});
+        if (err) return res.status(500).send({"error":"Problemas buscando los libros"});
         res.status(200).send(books);
     });
 });
