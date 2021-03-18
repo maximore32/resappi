@@ -2,7 +2,7 @@
 /node_modules
 /.pnp
 .pnp.js
-'mongodb+srv://maxpower:helloworld@cluster0.6di0t.mongodb.net/testmax1?retryWrites=true&w=majority'
+
 
 # testing
 /coverage
